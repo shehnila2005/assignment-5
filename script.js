@@ -9,7 +9,6 @@ function area () {
   document.getElementById('answer').innerHTML = Math.round(answer)
 }
 function circumference () {
-  circumference = parseInt(circumference)
   r = document.getElementById('input2').value
   r = parseInt(r)
   answer = 2 * r
