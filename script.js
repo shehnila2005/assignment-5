@@ -1,16 +1,16 @@
-let r = 0
+let diameter = 0
 let answer = 0
-document.getElementById('button').addEventListener('click', area)
-document.getElementById('button2').addEventListener('click', circumference)
-function area () {
-  r = document.getElementById('input').value
-  r = parseInt(r)
-  answer = Math.PI * (r * r)
-  document.getElementById('answer').innerHTML = Math.round(answer)
-}
-function circumference () {
-  r = document.getElementById('input2').value
-  r = parseInt(r)
-  answer = 2 * r
-  document.getElementById('answer').innerHTML = Math.round(answer)
+
+document.getElementById('button').addEventListener('click', areacircumference)
+
+function areacircumference () {
+  diameter = document.getElementById('input').value
+  diameter = parseInt(diameter)
+  answer = ((Math.PI * diameter * diameter) / 4)
+
+  document.getElementById('text1').innerHTML = Math.round(answer)
+  diameter = document.getElementById('input').value
+  diameter = parseInt(diameter)
+  answer = (Math.PI * diameter)
+  document.getElementById('text2').innerHTML = Math.round(answer)
 }
